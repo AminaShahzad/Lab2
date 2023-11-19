@@ -1,15 +1,17 @@
 #include<stdio.h>
-#include<string.h>
 int main(){
-int c;
-int sum=1;
-printf("Enter a number:");
-scanf("%d",&c);
-for (int a=1;a<c;a++){
-    int f=a+a+1;
-    sum+=f;
-    printf("%d\n",f);
+    int n;
+printf("Enter the number of terms:\n");
+scanf("%d",&n);
+int sum=0;
+for(int i=0;i<=2*n;i++){
+    if (i%2==0){
+            ;
+        continue;
+    }else{
+        printf("%d ",i);
+    sum+=i;
+    }
+}printf("\n0Sum of %d natural numbers is %d",n,sum);
+return 0;
 }
-
- printf("Sum of %d odd numbers is %d",c,sum);
- return 0;}
